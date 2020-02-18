@@ -15,14 +15,11 @@ class CreateProspectosTable extends Migration
     {
         Schema::create('prospectos', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('empresa');
-            $table->text('contacto');
+            $table->text('nombre');
             $table->text('telefono');
             $table->text('correo');
             $table->unsignedInteger('procedencia');
-            $table->unsignedInteger('industria');
-            $table->double('valor');
-            $table->unsignedInteger('etapa_id');
+            $table->unsignedInteger('tipo');
             $table->text('estatus');
             $table->unsignedInteger('userid');
             $table->timestamps();

@@ -14,9 +14,7 @@ $factory->define(Prospecto::class, function (Faker $faker) {
 		'telefono'=> $faker->phoneNumber,
 		'correo'=> $faker->email,
 		'procedencia'=> $faker->numberBetween(1,7),
-		'industria'=> $faker->numberBetween(1,5),
-		'valor'=>$faker->randomFloat(2,0,100000),
-		'etapa_id'=>$faker->numberBetween(1,5),
+		'tipo'=> $faker->numberBetween(1,2),
 		'estatus'=>$faker->randomElement(['prospecto', 'perdido','cliente']),
 		'userid'=>$faker->numberBetween(4,7),
     ];
