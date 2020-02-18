@@ -16,29 +16,25 @@ class UsersTableSeeder extends Seeder
             'name'=>'Admin Demo',
             'email'=>'admin@uno.uno',
             'password'=>bcrypt('12341234'),
-            'admin'=>true,
-            'meta'=>0,
+            'admin'=>true
         ]);
         User::create([
         	'name'=>'Consultor Demo',
         	'email'=>'consultor@uno.uno',
         	'password'=>bcrypt('12341234'),
-            'consultor'=>true,
-            'meta'=>0,
+            'consultor'=>true
         ]);
         User::create([
             'name'=>'Director Demo',
             'email'=>'director@uno.uno',
             'password'=>bcrypt('12341234'),
-            'director'=>true,
-            'meta'=>0,
+            'director'=>true
         ]);
         User::create([
             'name'=>'Vendedor Demo',
             'email'=>'vendedor@uno.uno',
             'password'=>bcrypt('12341234'),
-            'vendedor'=>true,
-            'meta'=>100,
+            'vendedor'=>true
         ]);
 
         //Si quisiera crear 5 usuarios aparte de Juan
